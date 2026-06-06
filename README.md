@@ -1,25 +1,24 @@
 <div align="center">
 
-# 🚜 Digital Farm Management AI
+# ⛏️ RockGuard AI — Mining Safety System
 
-### AI-powered livestock health & antimicrobial resistance management for Indian farmers
+### Real-time rockfall prediction with continuous online learning & geotechnical monitoring
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
 [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
-[![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlite.org)
-[![Languages](https://img.shields.io/badge/Languages-8_Indian-00C851?style=for-the-badge)]()
+[![Folium](https://img.shields.io/badge/Folium-GIS_Maps-77B829?style=for-the-badge)](https://python-visualization.github.io/folium/)
+[![SQLite](https://img.shields.io/badge/SQLite-Real--time_DB-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlite.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 <br/>
 
-> **75% of India's livestock farmers have no digital health records.**  
-> **Antimicrobial resistance kills 700,000 people globally every year.**  
-> This platform fights both — in your language.
+> **Mining accidents kill 15,000+ workers globally every year.**  
+> **RockGuard AI detects the risk before it becomes a disaster.**
 
 <br/>
 
-![Farm Management Banner](https://via.placeholder.com/1000x400/1b5e20/a5d6a7?text=Digital+Farm+Management+AI+%7C+Krishi+Swasthya+Platform)
+![RockGuard Banner](https://via.placeholder.com/1000x400/1e3c72/ffffff?text=RockGuard+AI+%7C+Real-Time+Mining+Safety+System)
 
 </div>
 
@@ -29,12 +28,13 @@
 
 - [📖 Overview](#-overview)
 - [✨ Features](#-features)
-- [🌐 Multi-language Support](#-multi-language-support)
-- [🤖 AI Models](#-ai-models)
-- [📊 Platform Modules](#-platform-modules)
+- [🤖 AI Architecture](#-ai-architecture)
+- [📡 Sensor Monitoring](#-sensor-monitoring)
+- [🗺️ Risk Mapping](#️-risk-mapping)
+- [🔄 Online Learning Pipeline](#-online-learning-pipeline)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [🚀 Getting Started](#-getting-started)
-- [👥 User Roles](#-user-roles)
+- [📊 Dashboard Modules](#-dashboard-modules)
 - [📁 Project Structure](#-project-structure)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
@@ -43,9 +43,9 @@
 
 ## 📖 Overview
 
-**Digital Farm Management AI** is a comprehensive Streamlit-based platform for managing livestock health records, tracking antimicrobial treatments, predicting resistance risks, and ensuring regulatory compliance — built specifically for **Indian farmers, veterinarians, government officials, and researchers**.
+**RockGuard AI** is a production-grade Streamlit platform for real-time rockfall risk prediction at mining sites across India. It combines **Gradient Boosting ML** with **continuous online learning**, geotechnical sensor data streams, interactive Folium risk maps, and an automated alert system — retraining itself every 5 minutes with fresh data from active mining sites.
 
-The system uses an ensemble of ML models (Random Forest, Gradient Boosting, MLP Neural Network, Isolation Forest) to predict antimicrobial resistance risk, recommend optimal dosages, detect anomalous treatment patterns, and forecast future treatment needs — all while enforcing MRL (Maximum Residue Limit) compliance to ensure food safety.
+The system monitors 14 parameters across weather, geotechnical, and blast domains, classifies risk into Low/Medium/High with confidence scores, and immediately broadcasts critical alerts with evacuation protocols.
 
 ---
 
@@ -53,153 +53,178 @@ The system uses an ensemble of ML models (Random Forest, Gradient Boosting, MLP 
 
 | Feature | Description |
 |---|---|
-| 🧠 **AI Resistance Prediction** | Random Forest model predicts antimicrobial resistance probability |
-| 💊 **Optimal Dosage Recommendation** | Gradient Boosting recommends weight-based dosages |
-| 🔮 **Treatment Efficacy Forecast** | MLP Neural Network predicts treatment success rate |
-| 🚨 **Anomaly Detection** | Isolation Forest detects abnormal treatment patterns |
-| 📊 **MRL Compliance Monitor** | Real-time Maximum Residue Limit tracking with score |
-| 📦 **Drug Inventory Management** | Stock levels, expiry alerts & low-stock warnings |
-| 💰 **Financial Tracking** | Treatment costs, monthly trends & cost-per-animal |
-| 🌐 **8 Indian Languages** | English, Hindi, Bengali, Telugu, Tamil, Gujarati, Malayalam, Punjabi |
-| 📈 **Plotly Analytics Dashboard** | Interactive species distribution, usage trends & risk histograms |
-| 📤 **CSV Export** | Download filtered treatment records |
-| 🗓️ **Treatment Forecasting** | 30-day treatment volume prediction with seasonal factors |
-| 🔐 **Secure Auth** | SHA-256 hashed passwords with role-based access |
+| 🧠 **Adaptive AI Model** | Gradient Boosting Classifier with online learning — auto-retrains every 5 minutes |
+| 📡 **14-Parameter Monitoring** | Weather, geotechnical & blast parameters tracked simultaneously |
+| 🎯 **Confidence Scoring** | Every prediction includes a confidence interval from decision boundary distance |
+| 🗺️ **Interactive Risk Map** | Folium map with color-coded site markers and popup sensor readings |
+| 🔄 **Online Learning** | Model continuously improves with new site data — version-controlled |
+| 🚨 **Tiered Alert System** | 3-level alerts (Low/Medium/High) with specific action protocols |
+| 📊 **72-Hour History** | Multi-parameter time series with hourly temporal analysis |
+| ⚙️ **System Diagnostics** | CPU, memory, model accuracy, sensor connectivity & training health |
+| 📱 **SMS + Email Alerts** | Configurable notification channels with test capability |
+| 🏭 **4 Indian Mining Sites** | Jharia, Bailadila, Kolar Gold Fields, Rajpura-Dariba pre-loaded |
 
 ---
 
-## 🌐 Multi-language Support
+## 🤖 AI Architecture
 
-The platform is fully localised for **8 major Indian languages** — every label, button, alert, and navigation item adapts to the selected language:
-
-| Language | Script | Coverage |
-|---|---|---|
-| 🇬🇧 English | Latin | 100% (primary) |
-| 🇮🇳 Hindi (हिंदी) | Devanagari | 100% |
-| 🇧🇩 Bengali (বাংলা) | Bengali | Core UI |
-| 🌊 Telugu (తెలుగు) | Telugu | Core UI |
-| 🌺 Tamil (தமிழ்) | Tamil | Core UI |
-| 💎 Gujarati (ગુજરાતી) | Gujarati | Core UI |
-| 🌴 Malayalam (മലയാളം) | Malayalam | Core UI |
-| 🌾 Punjabi (ਪੰਜਾਬੀ) | Gurmukhi | Core UI |
-
----
-
-## 🤖 AI Models
-
-### Model Architecture
+### Model Pipeline
 
 ```
-Treatment Input
-    │
-    ├── LabelEncoder (species, drug_name, reason, breed)
-    ├── StandardScaler (dosage, age, weight, withdrawal_period)
-    │
-    ▼
-┌─────────────────────────────────────────────────────────┐
-│                  AdvancedAIModelManager                 │
-│                                                         │
-│  RandomForestRegressor    → Resistance Risk Score       │
-│  GradientBoostingRegressor → Optimal Dosage            │
-│  MLPRegressor             → Treatment Efficacy         │
-│  IsolationForest          → Anomaly Detection          │
-│  KMeans                   → Farm Pattern Clustering    │
-└─────────────────────────────────────────────────────────┘
-    │
-    ▼
-Real-time predictions displayed during treatment entry
+Sensor Input (14 features)
+        │
+        ├── Weather: temperature, humidity, rainfall, wind_speed, pressure
+        ├── Geotechnical: piezometer, vibration_ppv, crack_displacement,
+        │                 tilt_angle, groundwater_level
+        └── Blast: blast_intensity, distance_to_slope, explosive_weight, blast_frequency
+        │
+        ▼
+┌─────────────────────────────────────────────────────────────┐
+│              AdaptiveRockfallPredictor                       │
+│                                                             │
+│  GradientBoostingClassifier                                 │
+│  • n_estimators=150, learning_rate=0.1, max_depth=6        │
+│  • predict_proba() → [P(Low), P(Med), P(High)]             │
+│  • decision_function() → confidence score                  │
+│                                                             │
+│  Online Learning Loop (every 5 min):                        │
+│  ┌──────────────────────────────────────────┐              │
+│  │ 1. Collect 20 samples/site × 4 sites     │              │
+│  │ 2. Add to deque buffer (maxlen=1000)      │              │
+│  │ 3. Combine with 400 historical samples   │              │
+│  │ 4. Retrain on combined dataset           │              │
+│  │ 5. Evaluate accuracy → version++         │              │
+│  └──────────────────────────────────────────┘              │
+└─────────────────────────────────────────────────────────────┘
+        │
+        ▼
+Risk Level + Probability + Confidence → Alert System
 ```
 
-### Resistance Risk Model
+### Risk Classification
 
-| Input Feature | Description |
-|---|---|
-| `species` | Animal species (Cattle/Buffalo/Goat/Sheep/Pig/Poultry) |
-| `drug_name` | Antimicrobial drug selected |
-| `reason` | Treatment reason (30 categories) |
-| `age` | Animal age in months |
-| `weight` | Animal weight in kg |
-| `dosage` | Dosage in mg/kg |
-| `withdrawal_period` | Drug-specific withdrawal days |
-
-**Output:** Risk score 0.0–1.0 displayed at treatment entry
-
-### Compliance Scoring (5 weighted criteria)
-
-| Criterion | Weight | Description |
-|---|---|---|
-| MRL Compliance | 40% | Animals sold before safe date |
-| Dosage Appropriateness | 25% | Deviation from weight-based expected dosage |
-| Resistance Risk | 20% | Treatments with AI risk score >0.7 |
-| Record Completeness | 10% | Missing required fields |
-| Environmental Impact | 5% | High-impact drug usage |
-
-### Antimicrobials Database (15 drugs)
-
-| Drug | Category | Withdrawal (days) | Resistance Risk |
+| Risk Score | Level | Color | Action |
 |---|---|---|---|
-| Ceftiofur | Cephalosporin | 4 | 🟢 Low (0.15) |
-| Amoxicillin | Beta-lactam | 7 | 🟢 Low (0.30) |
-| Enrofloxacin | Fluoroquinolone | 10 | 🟡 Med (0.35) |
-| Oxytetracycline | Tetracycline | 14 | 🟡 Med (0.45) |
-| Streptomycin | Aminoglycoside | 21 | 🔴 High (0.55) |
-| Tilmicosin | Macrolide | 28 | 🟢 Low (0.25) |
+| ≥ 10 | 🔴 **High** | Dark Red | Stop blasting, evacuate, alert emergency |
+| 5–9 | 🟡 **Medium** | Orange | Reduce blast intensity 30%, brief safety team |
+| 0–4 | 🟢 **Low** | Green | Normal operations, standard monitoring |
+
+### Risk Score Calculation
+
+```python
+# Weather-based risks
+if rainfall_24h > 50: risk_score += 3
+if temperature > 35 or < 5: risk_score += 1
+if wind_speed > 20: risk_score += 1
+
+# Geotechnical risks  
+if vibration_ppv > 5: risk_score += 4   ← Highest weight
+if crack_displacement > 2: risk_score += 3
+if piezometer_pressure > 20: risk_score += 2
+if abs(tilt_angle) > 2: risk_score += 2
+
+# Blast-induced risks
+if blast_intensity > 5 and distance < 100: risk_score += 3
+if explosive_weight > 50 and distance < 200: risk_score += 2
+
+# Apply site-specific multiplier (1.0 – 1.5)
+risk_score *= site_risk_base
+```
+
+### Temporal Data Patterns
+
+The system generates **realistic sensor data** with:
+- **Seasonal temperature variation** using sinusoidal day-of-year model
+- **Monsoon-influenced rainfall** with exponential distribution
+- **Memory effects** — current readings influenced by previous state (70% memory factor)
+- **3% label noise** to simulate real-world sensor uncertainty
 
 ---
 
-## 📊 Platform Modules
+## 📡 Sensor Monitoring
 
-### 1. 📊 Dashboard
-- Total animals, active treatments, pending alerts, total cost
-- Species-wise treatment distribution (pie chart)
-- Treatment usage trends over time (line chart)
-- Recent treatment records table
+### 10 Live Sensor Parameters
 
-### 2. 💊 Add Treatment Record
-- Full animal profile (species, breed, age, weight)
-- Drug selection with auto-populated withdrawal period
-- Real-time AI predictions (risk, dosage, efficacy)
-- Automatic safe sale date calculation
-- Inventory auto-deduction on submission
+| Parameter | Threshold | Alert Condition |
+|---|---|---|
+| Temperature | 35°C | Above threshold |
+| Humidity | 90% | Above threshold |
+| Rainfall (24h) | 50mm | Above threshold |
+| Wind Speed | 25km/h | Above threshold |
+| Pressure | 980hPa | Below threshold |
+| Piezometer Pressure | 20kPa | Above threshold |
+| Vibration PPV | 5.0mm/s | Above threshold |
+| Crack Displacement | 2.0mm | Above threshold |
+| Tilt Angle | ±3° | Outside range |
+| Groundwater Level | 15m | Above threshold |
 
-### 3. 📋 View Records
-- Filter by species, drug, date range
-- Full-text search across all fields
-- CSV export of filtered results
+### Live Sensor Table
 
-### 4. 🤖 AI Analytics
-- Resistance risk distribution histogram
-- Treatment efficacy distribution
-- Isolation Forest anomaly detection with flagged records
-- Model training status & performance
+Every reading is displayed with:
+- Current value in engineering units
+- Threshold value for comparison
+- Status indicator (🟢 Normal / 🔴 Alert)
 
-### 5. 🚨 Smart Alerts
-- MRL violation alerts (animals still in withdrawal)
-- Low inventory stock warnings
-- High resistance risk treatment flags
-- Severity-coded color display (High/Medium/Low)
+---
 
-### 6. 🔮 AI Predictions
-- 30-day treatment volume forecast (seasonal adjustment)
-- Resistance risk trend over time
-- Moving average-based forecasting
+## 🗺️ Risk Mapping
 
-### 7. ✅ Compliance Monitor
-- Compliance score gauge (0–100%)
-- Violation breakdown with counts
-- Actionable recommendations per violation type
+Interactive Folium map with:
 
-### 8. 📦 Drug Inventory
-- Add/track drug batches with expiry dates
-- Low stock alerts (below minimum level)
-- Items expiring within 30 days
-- Auto-update on treatment submission
+```
+Site Marker Colors:
+  🟢 Dark Green   → Low risk, high confidence (>70%)
+  🟢 Green        → Low risk, medium confidence
+  🟠 Dark Orange  → Medium risk, high confidence
+  🟠 Orange       → Medium risk, medium confidence
+  🔴 Dark Red     → High risk, high confidence
+  🔴 Red          → High risk, medium confidence
 
-### 9. 💰 Financial Tracking
-- Total, monthly, per-animal, per-treatment costs
-- Monthly cost bar chart
-- Drug-wise cost distribution pie chart
-- Species × drug cost breakdown table
+High-risk sites get an additional pulsing outer ring
+```
+
+**Pre-loaded Indian Mining Sites:**
+
+| Site | Type | Location | Risk Multiplier |
+|---|---|---|---|
+| Jharia Coalfield | Coal | Jharkhand | 1.2x |
+| Bailadila Iron Ore | Iron | Chhattisgarh | 1.0x |
+| Kolar Gold Fields | Gold | Karnataka | 1.5x |
+| Rajpura-Dariba | Lead-Zinc | Rajasthan | 1.1x |
+
+---
+
+## 🔄 Online Learning Pipeline
+
+```
+Every 5 minutes:
+┌─────────────────────────────────────────────────────────┐
+│                                                         │
+│  STEP 1: Data Collection                                │
+│  • 20 samples × 4 sites = 80 new data points           │
+│  • Temporal patterns + site-specific stress factors     │
+│  • Realistic label generation with 3% noise            │
+│                                                         │
+│  STEP 2: Buffer Management                              │
+│  • Add to deque(maxlen=1000)                           │
+│  • Auto-trim: keep last 500 if overflow                │
+│                                                         │
+│  STEP 3: Retraining (if buffer ≥ 50 samples)          │
+│  • Combine: 400 historical + buffer samples            │
+│  • 80/20 train-test split                              │
+│  • GradientBoostingClassifier.fit()                    │
+│                                                         │
+│  STEP 4: Version Control                                │
+│  • Evaluate accuracy on test set                        │
+│  • Increment model version                              │
+│  • Store performance metrics                            │
+│                                                         │
+│  STEP 5: Broadcast                                      │
+│  • Update dashboard metrics                             │
+│  • Send alerts if High risk detected                   │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -209,12 +234,12 @@ Real-time predictions displayed during treatment entry
 
 | Layer | Technology |
 |---|---|
-| **Frontend** | Streamlit, Plotly Express, Plotly Graph Objects |
-| **ML Models** | Scikit-learn (RF, GBR, MLP, IsolationForest, KMeans) |
-| **Database** | SQLite (via Python sqlite3) |
+| **Frontend** | Streamlit, Plotly Express, Plotly Graph Objects, Plotly Subplots |
+| **ML/AI** | Scikit-learn (GradientBoosting, RandomForest, IsolationForest) |
+| **GIS Maps** | Folium, streamlit-folium |
+| **Database** | SQLite (sensor_data, model_performance, training_buffer) |
 | **Data** | Pandas, NumPy |
-| **Auth** | SHA-256 (hashlib) |
-| **Localisation** | Custom LANGUAGES dict (8 languages) |
+| **Threading** | Python threading, collections.deque |
 
 </div>
 
@@ -232,8 +257,8 @@ pip
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/mayurpatil10001/digital-farm-management-ai.git
-cd digital-farm-management-ai
+git clone https://github.com/mayurpatil10001/rockguard-ai-mining-safety.git
+cd rockguard-ai-mining-safety
 ```
 
 ### 2. Install Dependencies
@@ -245,8 +270,8 @@ pip install -r requirements.txt
 Or install manually:
 
 ```bash
-pip install streamlit pandas numpy scikit-learn plotly sqlite3 \
-            matplotlib seaborn uuid
+pip install streamlit pandas numpy scikit-learn plotly folium \
+            streamlit-folium requests joblib pickle5 sqlite3
 ```
 
 ### 3. Run the Application
@@ -257,68 +282,87 @@ streamlit run app.py
 
 Open your browser at: **http://localhost:8501**
 
-### 4. Create Demo Data
-
-Click **"🧪 Create Demo Data"** in the sidebar to instantly populate the app with:
-- Demo user: `username: demo`, `password: demo123`
-- 10 sample treatment records across multiple species and drugs
+The system will:
+1. Automatically perform **initial model training** (800 samples)
+2. Begin **collecting real-time sensor data** from all 4 sites
+3. Schedule **retraining every 5 minutes** automatically
 
 ---
 
-## 👥 User Roles
+## 📊 Dashboard Modules
 
-| Role | Description | Access |
-|---|---|---|
-| 🌾 **Farmer** | Livestock owner managing own herd | Own farm records |
-| 🩺 **Veterinarian** | Licensed vet prescribing treatments | Treatment + compliance |
-| 🏛️ **Government Official** | Regulatory oversight | Compliance + analytics |
-| 🔬 **Researcher** | Academic/research analysis | Full analytics |
-| 🤝 **Cooperative Member** | Farmer cooperative participant | Own farm records |
+### Tab 1: 🎯 Live Monitoring
+- Real-time risk level with confidence score
+- 5 live metric cards (temperature, rainfall, vibration, crack movement)
+- Risk probability bar chart with confidence overlay
+- Color-coded alert panel with specific action protocols
+- Complete 10-parameter sensor readings table with threshold comparison
 
-All 28 Indian states with districts are pre-loaded for registration.
+### Tab 2: 📊 Risk Analysis
+- Interactive Folium risk map — all 4 mining sites
+- Feature importance bar chart (live model)
+- Model performance evolution line chart
+- 8×8 parameter correlation matrix heatmap
+
+### Tab 3: 📈 Historical Trends
+- 72-hour 4-panel time series (weather / stability / pressure / risk)
+- Daily pattern analysis — average readings by hour
+- Statistical summary with risk event counts
+
+### Tab 4: 🚨 Alert Center
+- Live alert feed table (last 10 predictions)
+- Configurable threshold sliders (6 parameters)
+- SMS + email notification configuration
+- Test alert system button
+
+### Tab 5: ⚙️ System Status
+- Training session history table with accuracy per version
+- Training buffer risk distribution analysis
+- Model accuracy evolution chart
+- Resource utilization (CPU, memory, storage, network)
+- System health indicator with performance index
 
 ---
 
 ## 📁 Project Structure
 
 ```
-digital-farm-management-ai/
+rockguard-ai-mining-safety/
 │
-├── app.py                        # Main Streamlit application
-├── requirements.txt              # Python dependencies
-├── enhanced_farm_management.db   # SQLite database (auto-created)
+├── app.py                         # Main Streamlit application
+├── requirements.txt               # Python dependencies
+├── rockfall_realtime.db           # SQLite database (auto-created)
 │
-├── modules/                      # (recommended refactor)
-│   ├── ai_models.py              # AdvancedAIModelManager
-│   ├── database.py               # EnhancedDatabaseManager
-│   ├── compliance.py             # calculate_compliance_score
-│   ├── forecasting.py            # generate_treatment_forecast
-│   └── languages.py             # LANGUAGES dict
+├── models/                        # (recommended refactor)
+│   ├── adaptive_predictor.py      # AdaptiveRockfallPredictor class
+│   └── online_learning.py         # Online training pipeline
 │
-├── data/
-│   ├── antimicrobials_db.py      # 15 antimicrobials with properties
-│   ├── species_breeds.py         # 6 species × Indian breeds
-│   └── states_districts.py      # All 28 states + districts
+├── data/                          # (recommended refactor)
+│   ├── realtime_stream.py         # RealTimeDataStream class
+│   └── mining_sites.py           # Site coordinates & risk configs
+│
+├── services/
+│   ├── database_manager.py        # EnhancedDatabaseManager class
+│   └── alert_service.py           # SMS/email alert system
+│
+├── utils/
+│   └── risk_map.py                # Folium map generator
 │
 └── README.md
 ```
 
 ---
 
-## 🌍 Impact & SDG Alignment
+## 🏭 Real-World Impact
 
-This platform directly addresses:
+RockGuard AI addresses India's critical mining safety challenges:
 
-- **SDG 2** (Zero Hunger) — Better livestock health → better food production
-- **SDG 3** (Good Health) — Antimicrobial resistance is a global health emergency
-- **SDG 12** (Responsible Consumption) — MRL compliance ensures safe food
-- **SDG 15** (Life on Land) — Environmental impact scoring for drug use
+- **Coal India Limited** — world's largest coal producer, 300K+ workers
+- **NMDC, SAIL, Tata Steel** — major iron ore mining operations
+- **DGMS (Directorate General of Mines Safety)** — regulatory compliance
+- **CMPDIL** — Central Mine Planning & Design Institute
 
-**India-specific impact:**
-- Covers all **28 states** and major districts
-- Supports **6 livestock species** critical to Indian agriculture
-- Includes **Indian breeds** (Gir, Sahiwal, Murrah, Jamunapari)
-- Available in **8 Indian languages** including Hindi, Bengali, Telugu, Tamil
+The system's online learning capability means it **gets smarter over time** — adapting to site-specific geology, seasonal patterns, and operational changes without manual retraining.
 
 ---
 
@@ -334,12 +378,12 @@ git push origin feature/your-feature
 ```
 
 **Ideas for contributions:**
-- FSSAI & AGMARK compliance integration
-- Geospatial disease heatmaps by district
-- WhatsApp/SMS alert integration via Twilio
-- Voice input in regional languages
-- Offline mode with local SQLite sync
-- Integration with eNAM (National Agriculture Market)
+- Integration with actual IoT sensors (Raspberry Pi GPIO)
+- DGMS compliance report generation
+- WhatsApp alert via Twilio API
+- LSTM model for sequence-based prediction
+- Microseismic event detection module
+- Integration with OpenWeatherMap API for live weather
 
 ---
 
@@ -351,10 +395,10 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 <div align="center">
 
-**किसान समृद्ध तो देश समृद्ध | Prosperous Farmer, Prosperous Nation**
+**Safety First. Every Mine. Every Day.**
 
 Built with ❤️ by [Mayur Patil](https://github.com/mayurpatil10001)
 
-⭐ Star this repo if it helped Indian farmers!
+⭐ Star this repo if it could save a miner's life!
 
 </div>
